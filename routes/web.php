@@ -18,10 +18,10 @@ Route::get('/', function () {
 });
 
 /* Route Sistem Auth */
-Route::get('/registrasi', 'AuthController@halamanRegistrasi')->name('registrasi');
-Route::get('/login', 'AuthController@halamanLogin')->name('login');
-Route::get('/login_verifikasi', 'AuthController@loginVerifikasi')->name('verifikasi');
-Route::get('/logout', 'AuthController@prosesLogout')->name('logout');
+Route::get('/registrasi', 'AuthController@registrasi');
+Route::get('/login', 'AuthController@index')->name('login');
+Route::get('/login_verifikasi', 'AuthController@loginVerifikasi');
+Route::get('/logout', 'AuthController@prosesLogout');
 
 // Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
